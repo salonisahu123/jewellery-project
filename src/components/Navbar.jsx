@@ -32,7 +32,7 @@ const Navbar = () => {
       <div className="h-20 px-10 flex items-center justify-between border-b border-[#1A1A1A]">
         {/* Logo matching the "GOLDENHUE" vibe */}
         <div className="text-2xl font-semibold tracking-[0.2em] uppercase text-[#C5A880]">
-          GOLDENHUE
+          GOLDEN
           <span className="block text-[9px] tracking-[0.4em] text-gray-400 font-light text-center">JEWELRY</span>
         </div>
 
