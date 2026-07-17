@@ -20,7 +20,7 @@ const NewArrival = () => {
 };
   return (
     <div>
-      <section className="relative mt-20">
+      <section className="relative m-15">
 
   {/* Banner */}
   <div className="relative h-[650px]">
@@ -60,7 +60,7 @@ const NewArrival = () => {
 
     {/* Bottom Cards */}
 
-    <div className="absolute bottom-[-90px] left-1/2 -translate-x-1/2 w-[90%] grid grid-cols-2 gap-8">
+    <div className="absolute bottom-[-90px] left-1/2 -translate-x-1/2 w-[90%] grid grid-cols-2 gap-8 mb-10">
 
       {newArrivals.cards.map((item, index) => (
 

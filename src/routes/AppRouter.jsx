@@ -5,9 +5,14 @@ import MainLayout from "../layout/MainLayout";
 import Home from "../pages/Home";
 import UsersLike from "../pages/UsersLike";
 import ContactUs from "../pages/ContactUs";
+import RegisterModal from "../pages/RegisterModal"
 import LoginModal from "../pages/LoginModal"
+
 import Diamonds from "../pages/Diamonds";
 import Products from "../pages/Products";
+
+
+
 
 const AppRouter = () => {
   return (
@@ -19,13 +24,21 @@ const AppRouter = () => {
         <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/diamonds" element={<Diamonds />} />
 
+<<<<<<< Updated upstream
         <Route path="/products/:category" element={<Products />} />
+=======
+        {/* bottom navbaar routes */}
+       
+
+>>>>>>> Stashed changes
 
 
       </Route>
 
       {/* Login page */}
+      <Route path="/register" element={<RegisterModal />} />
       <Route path="/login" element={<LoginModal />} />
+
     </Routes>
   );
 };

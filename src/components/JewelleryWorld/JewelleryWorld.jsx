@@ -1,3 +1,8 @@
+<<<<<<< Updated upstream
+=======
+
+
+>>>>>>> Stashed changes
 
 import React from "react";
 
@@ -57,11 +62,11 @@ const JewelleryWorld = () => {
               />
 
               {/* Gradient */}
-//                 <div className="absolute inset-0">
-//                   {/* Blur Shadow */}
-//                 <div className="absolute bottom-0 left-0 right-0 h-30 bg-gradient-to-t from-[#8B5E3C]/100 via-[#C79A63]/100 to-transparent opacity-90 transition-opacity duration-300 group-hover:opacity-95" />
+                 <div className="absolute inset-0">
+                   {/* Blur Shadow */}       
+          <div className="absolute bottom-0 left-0 right-0 h-30 bg-gradient-to-t from-[#8B5E3C]/100 via-[#C79A63]/100 to-transparent opacity-90 transition-opacity duration-300 group-hover:opacity-95" />
                   
-//                 </div>
+               </div>
 
               {/* Text */}
               <h3 className="absolute bottom-8 left-1/2 -translate-x-1/2 text-white text-5xl font-serif z-10 whitespace-nowrap">

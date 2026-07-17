@@ -5,6 +5,7 @@ import { NavLink,Link } from "react-router-dom";
 
 const Navbar = () => {
   const categories = [
+<<<<<<< Updated upstream
     { name: "All Jewellery", icon: <Grid2X2 size={18} /> , path: "/products/all-jewellery" },
     { name: "Gold", icon: <Circle size={18} /> ,path: "/products/gold"},
      {
@@ -18,6 +19,18 @@ const Navbar = () => {
     { name: "Wedding", icon: <Heart size={18} />, path: "/products/wedding" },
     { name: "Necklace", icon: <Ellipsis size={18} /> ,path: "/products/necklace"},
     { name: "Gifting", icon: <Gift size={18} /> ,path: "/products/gifting"},
+=======
+    { name: "All Jewellery", icon: <Grid2X2 size={18}/>, },
+    { name: "Gold", icon: <Circle size={18} />,  },
+    { name: "Diamond", icon: <Gem size={18} />, },
+    { name: "Earrings", icon: <Sparkles size={18}/>,  },
+    { name: "Rings", icon: <Circle size={18} /> },
+    { name: "Daily Wear", icon: <Sparkles size={18} /> },
+    { name: "Gemstone", icon: <Gem size={18} /> },
+    { name: "Wedding", icon: <Heart size={18} /> },
+    { name: "Gifting", icon: <Gift size={18} /> },
+    { name: "More", icon: <Ellipsis size={18} /> },
+>>>>>>> Stashed changes
   ];
 
   const [likes, setLikes] = useState([]);
@@ -115,9 +128,9 @@ const Navbar = () => {
           </Link>
 
           {/* Login */}
-          <Link to="/login">
+          <Link to="/register">
           <button className="px-7 py-2 rounded-full bg-gradient-to-r from-[#B98A28] to-[#F1D57A] text-[#3B2A17] font-semibold shadow-lg hover:scale-105 duration-300">
-            Login
+             Login/Signup
           </button>
           </Link>
 

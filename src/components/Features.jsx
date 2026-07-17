@@ -36,18 +36,24 @@ const features = [
 const Features = () => {
   return (
     <section className="w-[90%] mx-auto py-20">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 text-center">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         {features.map((item) => (
-          <div key={item.id} className="flex flex-col items-center">
-            <div className="text-black mb-6">
+          <div
+            key={item.id}
+            className="group text-center rounded-2xl border border-[#E6D5B8] bg-gradient-to-b from-[#FFFDF8] to-[#F8F1E7] p-8 transition-all duration-300 hover:shadow-xl hover:-translate-y-2 hover:border-[#C79A63]"
+          >
+            {/* Icon */}
+            <div className="flex justify-center mb-6 text-[#B08D57] group-hover:text-[#8B5E3C] transition-colors duration-300">
               {item.icon}
             </div>
 
-            <h3 className="text-3xl font-serif">
+            {/* Title */}
+            <h3 className="text-2xl font-serif text-[#4A2E1F]">
               {item.title}
             </h3>
 
-            <p className="text-gray-500 text-xl leading-9 mt-4 max-w-[280px]">
+            {/* Description */}
+            <p className="text-[#7A6A58] text-lg leading-8 mt-4">
               {item.desc}
             </p>
           </div>
@@ -55,7 +61,7 @@ const Features = () => {
       </div>
 
       {/* Bottom Line */}
-      <div className="border-b border-gray-200 mt-20"></div>
+      <div className="border-b border-[#D6B98C] mt-20"></div>
     </section>
   );
 };
