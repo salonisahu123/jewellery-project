@@ -13,11 +13,13 @@ import {
 } from "lucide-react";
 
 import AllJewellery from "./AllJewellery";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
 
   const [activeCategory, setActiveCategory] = useState(null);
-
+  const navigate = useNavigate();
+  
   const categories = [
     { name: "All Jewellery", icon: <Grid2X2 size={18} /> },
     { name: "Gold", icon: <Circle size={18} /> },
@@ -70,13 +72,15 @@ const Navbar = () => {
 
       {/* Bottom Navbar (Categories) */}
       <div className="bg-[#070707] relative ">
-      onMouseLeave={() => setActiveCategory(null)}
+     
         <ul className="flex justify-center items-center gap-8 py-3.5">
           {categories.map((item, index) => (
             <li
               key={index}
 
-               onMouseEnter={() => setActiveCategory(item.name)}
+             onClick={() => {
+    navigate(`/products/${item.name.toLowerCase().replace(/\s+/g, "-")}`);
+  }}
               className="flex items-center gap-2 cursor-pointer text-gray-400 hover:text-[#C5A880] text-xs uppercase tracking-wider font-light transition duration-300 py-3 border-b border-transparent hover:border-[#C5A880]"
             >
               <span className="opacity-80">{item.icon}</span>

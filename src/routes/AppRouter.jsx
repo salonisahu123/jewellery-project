@@ -7,6 +7,7 @@ import UsersLike from "../pages/UsersLike";
 import ContactUs from "../pages/ContactUs";
 import LoginModal from "../pages/LoginModal"
 import Diamonds from "../pages/Diamonds";
+import Products from "../pages/Products";
 
 const AppRouter = () => {
   return (
@@ -17,6 +18,9 @@ const AppRouter = () => {
         <Route path="/wishlist" element={<UsersLike />} />
         <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/diamonds" element={<Diamonds />} />
+
+        <Route path="/products/:category" element={<Products />} />
+
 
       </Route>
 

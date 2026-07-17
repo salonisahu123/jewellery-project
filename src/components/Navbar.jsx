@@ -5,20 +5,19 @@ import { NavLink,Link } from "react-router-dom";
 
 const Navbar = () => {
   const categories = [
-    { name: "All Jewellery", icon: <Grid2X2 size={18} /> },
-    { name: "Gold", icon: <Circle size={18} /> },
+    { name: "All Jewellery", icon: <Grid2X2 size={18} /> , path: "/products/all-jewellery" },
+    { name: "Gold", icon: <Circle size={18} /> ,path: "/products/gold"},
      {
     name: "Diamond",
     icon: <Gem size={18} />,
-    path: "/diamonds",
+    path: "/products/diamonds",
   },
-    { name: "Earrings", icon: <Sparkles size={18} /> },
-    { name: "Rings", icon: <Circle size={18} /> },
-    { name: "Daily Wear", icon: <Sparkles size={18} /> },
-    { name: "Gemstone", icon: <Gem size={18} /> },
-    { name: "Wedding", icon: <Heart size={18} /> },
-    { name: "Gifting", icon: <Gift size={18} /> },
-    { name: "More", icon: <Ellipsis size={18} /> },
+    { name: "Earrings", icon: <Sparkles size={18} /> , path: "/products/earrings"},
+    { name: "Rings", icon: <Circle size={18} />, path: "/products/rings" },
+    { name: "Daily Wear", icon: <Sparkles size={18} />,  path: "/products/dailywear" },
+    { name: "Wedding", icon: <Heart size={18} />, path: "/products/wedding" },
+    { name: "Necklace", icon: <Ellipsis size={18} /> ,path: "/products/necklace"},
+    { name: "Gifting", icon: <Gift size={18} /> ,path: "/products/gifting"},
   ];
 
   const [likes, setLikes] = useState([]);
