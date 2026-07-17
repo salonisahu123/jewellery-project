@@ -47,7 +47,7 @@ const Navbar = () => {
 
         {/* Logo */}
 
-        <Link to="/home">
+        <Link to="/">
           <div className="cursor-pointer">
             <h1 className="text-3xl font-serif font-bold tracking-wide text-[#8B6B1F]">
               GOLDENHUE
